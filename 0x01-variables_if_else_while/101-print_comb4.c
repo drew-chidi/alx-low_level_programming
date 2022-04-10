@@ -17,7 +17,7 @@ int main(void)
 
 	while (n1 <= 57)
 	{
-		n2 = n1 + 1;						
+		n2 = n1 + 1;
 		while (n2 <= 57)
 		{
 			n3 = n2 + 1;

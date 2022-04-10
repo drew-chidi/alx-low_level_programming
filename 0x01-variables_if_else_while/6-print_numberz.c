@@ -9,13 +9,12 @@
 
 int main(void)
 {
-	int n = 48;
+int n = 48;
 
-	while (n <= 57)
-	{
-		putchar(n);
-		n += 1;
-	}
-	printf("\n");
-	return (0);
+for (n = 0; n <= 9; ++n)
+{
+putchar('0' + n);
+}
+putchar('\n');
+return (0);
 }

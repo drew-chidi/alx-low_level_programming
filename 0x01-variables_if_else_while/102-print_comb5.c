@@ -30,7 +30,7 @@ int main(void)
 			{
 				putchar(com);
 				putchar(32);
-			}					
+			}
 			b += 1;
 		}
 		a += 1;
