@@ -1,20 +1,35 @@
 #include "main.h"
 
 /**
- *puts2 - prints every character of a string
- *@str: A pointer to an int that will be changed
+ * rev_string - prints a reverse string
+ *@s: A pointer to an int that will be changed
  *
- *Return: void which means it is correct
+ *Return: void
  */
 
-void puts2(char *str)
+void rev_string(char *s)
 {
-	int a;
+	char *start_c, *end_c, c;
+	int i, count;
+	int length = 0;
 
-	for (a = 0; str[a] != '\0'; a++)
+	for (i = 0; s[i]; i++)
 	{
-		if (a % 2 == 0)
-			_putchar (str[a]);
+		length++;
 	}
-	_putchar ('\n');
+	count = length;
+	start_c = s;
+	end_c = s;
+	for (i = 0; i < count - 1; i++)
+	{
+		end_c++;
+	}
+	for (i = 0; i < count / 2; i++)
+	{
+		c = *end_c;
+		*end_c = *start_c;
+		*start_c = c;
+		start_c++;
+		end_c--;
+	}
 }
