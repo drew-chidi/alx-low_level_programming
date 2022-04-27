@@ -9,13 +9,12 @@
 
 char  *_strstr(char *haystack, char *needle)
 {
-	char *str1, *str2; /*Declaring variables*/
+	char *str1, *str2;
 	
 	while (*haystack != '\0')
 	{
-		str1 = haystack; /*values*/
+		str1 = haystack;
 		str2 = needle;
-		/*Star WHILE*/
 		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
 		{
 			haystack++;

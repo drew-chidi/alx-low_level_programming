@@ -2,6 +2,7 @@
 
 /**
  *_memcpy -   copy number bytes form adress "from" to adress "to"
+ *            by @src into that pointed to by @dest.
  *@dest: content is to be copied
  *@src: Source of data to be copied
  *@n: bytes of the memory
@@ -11,6 +12,7 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
+	
 	i = 0;
 	while (i < n)  /*Delacring WHILE*/
 	{
